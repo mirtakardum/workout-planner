@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        '60/40' : '60% 40%',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
