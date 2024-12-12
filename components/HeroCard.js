@@ -1,4 +1,5 @@
 import Image from "next/image";
+import WorkoutTable from "./WorkoutTable";
 
 
 function HeroCard() {
@@ -18,7 +19,7 @@ function HeroCard() {
                     </div>
                 </div>
             </div>
-            <div className="h-[30px] w-full bg-black" />
+            <WorkoutTable />
         </div>
 
         </>
