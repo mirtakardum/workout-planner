@@ -15,6 +15,10 @@ module.exports = {
         foreground: "var(--foreground)",
         'wp-dark' : '#1a1818'
       },
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
+        'nunito' : ['Nunito Sans', 'sans-serif'],
+      }
     },
   },
   plugins: [],
