@@ -3,8 +3,8 @@
 function WorkoutTable(){
     return(
         <>
-        <div className="relative shadow-md rounded-lg shadow-slate-800 overflow-x-auto">
-            <table className="rounded-lg border border-separate border-tools-table-outline border-slate-800 border-1w-full table-fixed text-sm text-left rtl:text-right text-gray-500">
+        <div className="relative shadow-lg rounded-lg shadow-slate-500 overflow-x-auto">
+            <table className="rounded-lg border border-separate border-tools-table-outline border-1w-full table-fixed text-sm text-left rtl:text-right text-gray-500">
                 <thead className="text-xs text-gray-700 uppercase">
                     <tr>
                         <th scope="col" className="px-6 py-3">
@@ -23,31 +23,35 @@ function WorkoutTable(){
                 </thead>
                 <tbody>
                     <tr className="bg-white border-b">
-                        <td class="px-6 py-4 font-medium text-gray-900">
+                        <td className="px-6 py-4 font-medium text-gray-900">
                             Bench Press
                         </td>
                         <td className="px-6 py-4">
-                            Silver
+                            <input type="text" placeholder="KG" className="p-2 shadow-inner border-[1px] border-slate-200 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
                         </td>
-                        <td className="px-6 py-4">
-                            Laptop
+                        <td className="flex justify-center py-4">
+                            <input type="text" placeholder="#" className="w-[50%] p-2 shadow-inner border-[1px] border-slate-200 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
                         </td>
-                        <td className="px-6 py-4">
-                            $2999
+                        <td className="py-4">
+                            <div className="flex justify-center">
+                                <input type="text" placeholder="#" className="w-[50%] p-2 shadow-inner border-[1px] border-slate-200 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
+                            </div>
                         </td>
                     </tr>
-                    <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <tr className="bg-white border-b">
                         <th scope="row" className="px-6 py-4 font-medium text-gray-900 dark:text-white">
                             Barbell Row
                         </th>
                         <td className="px-6 py-4">
-                            White
+                            <input type="text" placeholder="KG" className="p-2 shadow-inner border-[1px] border-slate-200 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
                         </td>
-                        <td className="px-6 py-4">
-                            Laptop PC
+                        <td className="flex justify-center py-4">
+                            <input type="text" placeholder="#" className="w-[50%] p-2 shadow-inner border-[1px] border-slate-200 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
                         </td>
-                        <td className="px-6 py-4">
-                            $1999
+                        <td className="py-4">
+                            <div className="flex justify-center">
+                                <input type="text" placeholder="#" className="w-[50%] p-2 shadow-inner border-[1px] border-slate-200 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
+                            </div>
                         </td>
                     </tr>
                     <tr className="bg-white dark:bg-gray-800">
@@ -55,13 +59,15 @@ function WorkoutTable(){
                             Overhead Press
                         </th>
                         <td className="px-6 py-4">
-                            Black
+                            <input type="text" placeholder="KG" className="p-2 shadow-inner border-[1px] border-slate-200 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
                         </td>
-                        <td className="px-6 py-4">
-                            Accessories
+                        <td className="flex justify-center py-4">
+                            <input type="text" placeholder="#" className="w-[50%] p-2 shadow-inner border-[1px] border-slate-200 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
                         </td>
-                        <td className="px-6 py-4">
-                            $99
+                        <td className="py-4">
+                            <div className="flex justify-center">
+                                <input type="text" placeholder="#" className="w-[50%] p-2 shadow-inner border-[1px] border-slate-200 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
+                            </div>
                         </td>
                     </tr>
                 </tbody>
