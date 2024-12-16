@@ -19,7 +19,10 @@ function HeroCard() {
                     </div>
                 </div>
             </div>
-            <WorkoutTable />
+            <div className="flex flex-col items-center justify-between">
+                <h2 className="font-poppins text-[25px]">Here's what you're doing today!</h2>
+                <WorkoutTable />
+            </div>
         </div>
 
         </>

@@ -3,8 +3,8 @@
 function WorkoutTable(){
     return(
         <>
-        <div className="relative overflow-x-auto">
-            <table className="w-full table-fixed text-sm text-left rtl:text-right text-gray-500">
+        <div className="relative shadow-md rounded-lg shadow-slate-800 overflow-x-auto">
+            <table className="rounded-lg border border-separate border-tools-table-outline border-slate-800 border-1w-full table-fixed text-sm text-left rtl:text-right text-gray-500">
                 <thead className="text-xs text-gray-700 uppercase">
                     <tr>
                         <th scope="col" className="px-6 py-3">
