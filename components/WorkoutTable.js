@@ -3,7 +3,7 @@
 function WorkoutTable(){
     return(
         <>
-        <div class="relative overflow-x-auto">
+        <div className="relative overflow-x-auto">
             <table className="w-full table-fixed text-sm text-left rtl:text-right text-gray-500">
                 <thead className="text-xs text-gray-700 uppercase">
                     <tr>
