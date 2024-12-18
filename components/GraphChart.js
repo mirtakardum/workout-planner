@@ -1,41 +1,75 @@
+'use client';
+
 import Chart from 'chart.js/auto'
+import { useEffect } from "react";
+
 
 function GraphChart() {
-    (async function() {
+    useEffect(() => {
         const data = [
-            { year: 2010, count: 10 },
-            { year: 2011, count: 20 },
-            { year: 2012, count: 15 },
-            { year: 2013, count: 25 },
-            { year: 2014, count: 22 },
-            { year: 2015, count: 30 },
-            { year: 2016, count: 28 },
+        { date: 2010, weight: 10 },
+        { date: 2011, weight: 20 },
+        { date: 2012, weight: 15 },
+        { date: 2013, weight: 25 },
+        { date: 2014, weight: 22 },
+        { date: 2015, weight: 30 },
+        { date: 2016, weight: 28 },
         ];
-        })
 
-    setTimeout(() => {
-        new Chart(
-             document.getElementById('#chart-canvas'),
-             {
-             type: 'bar',
-             data: {
-                 labels: data.map(row => row.year),
-                 datasets: [
-                 {
-                     label: 'Acquisitions by year',
-                     data: data.map(row => row.count)
-                 }
-                 ]
-             }
-             }
-         );
-    }, 1000);
-        
-
-    return(
-        <>
-        </>
-    )
+        const ctx = document.getElementById('chart-canvas');
+        if (ctx) {
+        return(
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+            labels: data.map((row) => row.date),
+            datasets: [
+                {
+                data: data.map((row) => row.weight),
+                backgroundColor: '#f7f7f7',
+                borderColor: '#050505',
+                borderWidth: 1.5,
+                },
+            ],
+            },
+            options: {
+            plugins: {
+                legend: {
+                    display: false,
+                }
+            },
+            scales: {
+                y: {
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    align: 'center',
+                    text: 'weight',
+                    color: 'black',
+                    font: {
+                        family: 'poppins',
+                        size: 12,
+                    }
+                }
+                },
+                x: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        align: 'center',
+                        text: 'months',
+                        color: 'black',
+                        font: {
+                            family: 'poppins',
+                            size: 12,
+                        }
+                    }
+                    },
+            },
+            },
+        }));
+        };
+  }, []);
 }
 
 export default GraphChart;
