@@ -5,7 +5,7 @@ import WorkoutTable from "./WorkoutTable";
 function HeroCard() {
     return(
         <>
-        <div className="grid grid-cols-60/40 w-full gap-2 p-6 bg-white border border-gray-200 rounded-lg">
+        <div className="grid grid-cols-60/40 w-full p-6 bg-white border border-gray-200 rounded-lg">
             <div className="w-full">
                 <div>
                     <h1 className="font-nunito font-extrabold text-[40px]">Welcome back, Mirta!</h1>
