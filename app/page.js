@@ -24,7 +24,6 @@ export default function Home() {
         <div className="flex justify-between items-center bg-white min-h-[100%] w-[30%] rounded-lg">
           <canvas id="weight-canvas"><GraphChart canvasId="weight-canvas"/></canvas>
         </div>
-        <div className="bg-white min-h-[100%] w-[30%]" />
         <div className="p-4 bg-white min-h-[100%] w-[30%]">
           <h2 className=" font-poppins font-bold text-[18px]">BMI Calculator</h2>
             <BmiCalculator />
