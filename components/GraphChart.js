@@ -4,7 +4,7 @@ import Chart from 'chart.js/auto'
 import { useEffect } from "react";
 
 
-function GraphChart() {
+function GraphChart({ canvasId }) {
     useEffect(() => {
         const data = [
         { date: 2010, weight: 10 },
@@ -16,7 +16,7 @@ function GraphChart() {
         { date: 2016, weight: 28 },
         ];
 
-        const ctx = document.getElementById('chart-canvas');
+        const ctx = document.getElementById(canvasId);
         if (ctx) {
         return(
         new Chart(ctx, {
