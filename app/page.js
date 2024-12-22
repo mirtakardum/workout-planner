@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import HeroCard from "@/components/HeroCard";
 import GraphChart from "@/components/GraphChart";
 import Chart from 'chart.js/auto'
+import BmiCalculator from "@/components/BmiCalculator";
 
 export default function Home() {
 
@@ -21,7 +22,10 @@ export default function Home() {
           <canvas id="chart-canvas"><GraphChart/></canvas>
         </div>
         <div className="bg-white min-h-[100%] w-[30%]" />
-        <div className="bg-white min-h-[100%] w-[30%]" />
+        <div className="p-4 bg-white min-h-[100%] w-[30%]">
+          <h2 className=" font-poppins font-bold text-[18px]">BMI Calculator</h2>
+            <BmiCalculator />
+        </div>
       </div>
     </div>
     </>
