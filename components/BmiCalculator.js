@@ -51,7 +51,7 @@ function BmiCalculator(){
                 <input type="number" placeholder="KG" id="weight-input" className="w-[40%] p-2 shadow-inner border-[1px] border-slate-200 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
                 <label for="height-input" className="font-poppins text-[12px]">Height (cm):</label>
                 <input type="number" placeholder="CM" id="height-input" className="w-[40%] p-2 shadow-inner border-[1px] border-slate-200 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
-                <button type="button" className="text-white bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-5 py-2.5 mt-4 mb-2" onClick={calculateBMI}>Calculate</button>
+                <button type="button" className="text-white bg-wp-dark shadow-neumorphicButton font-medium rounded-lg text-sm px-5 py-2.5 mt-4 mb-2" onClick={calculateBMI}>Calculate</button>
             </div>
             <div className="w-[100%] flex flex-col items-center">
                 {bmi != 0 &&

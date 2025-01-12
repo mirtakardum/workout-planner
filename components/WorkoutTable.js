@@ -4,8 +4,8 @@ function WorkoutTable(){
     return(
         <>
         <div className="rounded-lg mt-3 overflow-x-auto">
-            <table className="rounded-lg py-2 border-2 border-black border-separate table-fixed text-sm text-left rtl:text-right text-gray-500">
-                <thead className="text-xs text-gray-700 uppercase">
+            <table className="rounded-lg py-2 shadow-neumorphicPressed border-separate table-fixed text-sm text-left rtl:text-right text-gray-500">
+                <thead className="text-xs text-slate-200 uppercase">
                     <tr>
                         <th scope="col" className="px-6 py-3 font-poppins">
                             Exercise
@@ -22,8 +22,8 @@ function WorkoutTable(){
                     </tr>
                 </thead>
                 <tbody>
-                    <tr className="bg-white border-b">
-                        <td className="px-6 py-4 font-medium text-gray-900 font-poppins">
+                    <tr className="border-b">
+                        <td className="px-6 py-4 font-medium text-slate-200 font-poppins">
                             Bench Press
                         </td>
                         <td className="px-6 py-4">
@@ -38,8 +38,8 @@ function WorkoutTable(){
                             </div>
                         </td>
                     </tr>
-                    <tr className="bg-white border-b">
-                        <th scope="row" className="px-6 py-4 font-medium text-gray-900 dark:text-white font-poppins">
+                    <tr className="border-b">
+                        <th scope="row" className="px-6 py-4 font-medium text-slate-200 dark:text-white font-poppins">
                             Barbell Row
                         </th>
                         <td className="px-6 py-4">
@@ -54,8 +54,8 @@ function WorkoutTable(){
                             </div>
                         </td>
                     </tr>
-                    <tr className="bg-white dark:bg-gray-800">
-                        <th scope="row" className="px-6 py-4 font-medium text-gray-900 dark:text-white font-poppins">
+                    <tr className="dark:bg-gray-800">
+                        <th scope="row" className="px-6 py-4 font-medium text-slate-200 dark:text-white font-poppins">
                             Overhead Press
                         </th>
                         <td className="px-6 py-4">

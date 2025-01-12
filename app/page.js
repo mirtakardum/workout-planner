@@ -13,18 +13,18 @@ export default function Home() {
 
   return (
     <>
-    <div className="flex-column h-screen w-screen p-12 bg-wp-dark">
-      <div className="flex">
+    <div className="flex flex-col gap-[20px] h-screen w-screen px-[3%] py-[20px] bg-wp-dark">
+      <div className="flex h-[50%] shadow-[0.625rem_0.625rem_0.875rem_0_rgb(255, 255, 255),-0.5rem_-0.5rem_1.125rem_0_rgb(255, 255, 255)]">
         <HeroCard/>
       </div>
-      <div className="flex h-[40%] justify-between mt-10">
-        <div className="flex justify-between items-center bg-white min-h-[100%] w-[30%] rounded-lg">
+      <div className="grid grid-cols-3 gap-[20px] h-[50%]">
+        <div className="flex items-center bg-wp-dark shadow-neumorphism min-h-[100%] rounded-lg">
           <canvas id="lift-canvas"><GraphChart canvasId="lift-canvas"/></canvas>
         </div>
-        <div className="flex justify-between items-center bg-white min-h-[100%] w-[30%] rounded-lg">
+        <div className="flex items-center bg-wp-dark shadow-neumorphism min-h-[100%] rounded-lg">
           <canvas id="weight-canvas"><GraphChart canvasId="weight-canvas"/></canvas>
         </div>
-        <div className="p-4 bg-white min-h-[100%] w-[30%]">
+        <div className="p-4 bg-white bg-wp-dark shadow-neumorphism rounded-lg">
           <h2 className=" font-poppins font-bold text-[18px]">BMI Calculator</h2>
             <BmiCalculator />
         </div>
