@@ -5,11 +5,13 @@ import { useState, useEffect, useRef } from "react";
 function BmiCalculator(){
 
     const [progressBar, setProgressBar] = useState(null)
+    const [progressBarWrapper, setProgressBarWrapper] = useState(null)
     const [progressBarWidth, setProgressBarWidth] = useState(0)
 
     //The first useEffect is called so that all the functions know which div (progress-bar) to target
     useEffect(() => {
         setProgressBar(document.getElementById("progress-bar"))
+        setProgressBarWrapper(document.getElementById("progress-bar-wrapper"))
     }, [])
 
     //The second useEffect is called when the progressBarWidth changes, so that the updateProgressBar will always happen
@@ -27,6 +29,7 @@ function BmiCalculator(){
         const height = parseFloat(document.getElementById("height-input").value) / 100;
         setBmi((weight / (height * height)).toFixed(2))
         setProgressBarWidth(Math.min(bmi * 2, 100))
+        progressBarWrapper.style.display = "block";
     }
 
     function updateProgressBar(){
@@ -43,23 +46,33 @@ function BmiCalculator(){
     }
 
 
+
+
     return(
         <>
-        <div className="grid grid-cols-2">
-            <div className="w-[100%] flex flex-col">
-                <label for="weight-input" className="font-poppins text-[12px]">Weight (kg):</label>
-                <input type="number" placeholder="KG" id="weight-input" className="w-[40%] p-2 shadow-inner border-[1px] border-slate-200 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
-                <label for="height-input" className="font-poppins text-[12px]">Height (cm):</label>
-                <input type="number" placeholder="CM" id="height-input" className="w-[40%] p-2 shadow-inner border-[1px] border-slate-200 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
-                <button type="button" className="text-white bg-wp-dark shadow-neumorphicButton font-medium rounded-lg text-sm px-5 py-2.5 mt-4 mb-2" onClick={calculateBMI}>Calculate</button>
+        <div className="grid grid-cols-2 h-[100%]">
+            <div className="flex flex-col justify-between">
+                <div>
+                </div>
+                <div className="w-[100%] flex flex-col justify-center gap-[20px]">
+                    <div className="flex flex-col">
+                        <label for="weight-input" className="font-poppins text-[12px] text-slate-200">Weight (kg):</label>
+                        <input type="number" placeholder="KG" id="weight-input" className="w-[40%] p-1 shadow-inner rounded-lg border-[1px] border-slate-200 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
+                    </div>
+                    <div className="flex flex-col">
+                        <label for="height-input" className="font-poppins text-[12px] text-slate-200">Height (cm):</label>
+                        <input type="number" placeholder="CM" id="height-input" className="w-[40%] p-1 shadow-inner rounded-lg border-[1px] border-slate-200 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
+                    </div>
+                </div>
+                <button type="button" className="text-white bg-wp-dark shadow-neumorphicButton font-medium rounded-lg text-sm px-5 py-2.5" onClick={() => {calculateBMI()}}>Calculate</button>
             </div>
-            <div className="w-[100%] flex flex-col items-center">
+            <div className="w-[100%] h-[100%] flex flex-col items-center">
                 {bmi != 0 &&
                     <p>{bmi}</p>
                 }
-                    <div className="w-[80%] border-2 border-slate-700 rounded-full overflow-hidden">
-                        <div id="progress-bar" className="h-6"/>
-                    </div>
+                <div id="progress-bar-wrapper" className="w-[80%] hidden border-2 border-slate-700 rounded-full overflow-hidden">
+                    <div id="progress-bar" className="h-6"/>
+                </div>
             </div>
         </div>
         </>

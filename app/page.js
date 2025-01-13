@@ -24,8 +24,8 @@ export default function Home() {
         <div className="flex items-center bg-wp-dark shadow-neumorphism min-h-[100%] rounded-lg">
           <canvas id="weight-canvas"><GraphChart canvasId="weight-canvas"/></canvas>
         </div>
-        <div className="p-4 bg-white bg-wp-dark shadow-neumorphism rounded-lg">
-          <h2 className=" font-poppins font-bold text-[18px]">BMI Calculator</h2>
+        <div className="flex flex-col justify-between p-4 bg-white bg-wp-dark shadow-neumorphism rounded-lg">
+          <h2 className=" font-poppins font-bold text-[25px] text-slate-200">BMI Calculator</h2>
             <BmiCalculator />
         </div>
       </div>
