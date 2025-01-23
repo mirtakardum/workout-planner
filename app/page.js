@@ -17,7 +17,7 @@ export default function Home() {
       <div className="flex h-[50%] shadow-[0.625rem_0.625rem_0.875rem_0_rgb(255, 255, 255),-0.5rem_-0.5rem_1.125rem_0_rgb(255, 255, 255)]">
         <HeroCard/>
       </div>
-      <div className="grid grid-cols-3 gap-[20px] h-[50%]">
+      <div className="md:grid md:grid-cols-3 hidden gap-[20px] h-[50%]">
         <div className="flex items-center bg-wp-dark shadow-neumorphism min-h-[100%] rounded-lg">
           <canvas id="lift-canvas"><GraphChart canvasId="lift-canvas"/></canvas>
         </div>
