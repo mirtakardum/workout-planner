@@ -27,14 +27,14 @@ function WorkoutTable(){
                             Bench Press
                         </td>
                         <td className="md:px-6 md:py-2">
-                            <input type="text" placeholder="KG" className="p-2 w-[60%] shadow-inner rounded-xl border-[1px] border-slate-400 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
+                            <input type="text" placeholder="KG" className="p-2 w-[60%] font-poppins text-[13px] shadow-inner rounded-xl border-[1px] border-slate-400 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
                         </td>
                         <td className="flex md:justify-center py-2">
-                            <input type="text" placeholder="#" className="w-[60%] p-2 shadow-inner rounded-xl border-[1px] border-slate-400 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
+                            <input type="text" placeholder="#" className="w-[60%] p-2 font-poppins text-[13px] shadow-inner rounded-xl border-[1px] border-slate-400 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
                         </td>
                         <td className="py-2">
                             <div className="flex md:justify-center">
-                                <input type="text" placeholder="#" className="w-[60%] p-2 shadow-inner rounded-xl border-[1px] border-slate-400 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
+                                <input type="text" placeholder="#" className="w-[60%] p-2 font-poppins text-[13px] shadow-inner rounded-xl border-[1px] border-slate-400 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
                             </div>
                         </td>
                     </tr>
@@ -43,14 +43,14 @@ function WorkoutTable(){
                             Barbell Row
                         </th>
                         <td className="md:px-6 md:py-2">
-                            <input type="text" placeholder="KG" className="p-2 w-[60%] shadow-inner rounded-xl border-[1px] border-slate-400 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
+                            <input type="text" placeholder="KG" className="p-2 w-[60%] font-poppins text-[13px] shadow-inner rounded-xl border-[1px] border-slate-400 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
                         </td>
                         <td className="flex md:justify-center py-2">
-                            <input type="text" placeholder="#" className="w-[60%] p-2 shadow-inner rounded-xl border-[1px] border-slate-400 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
+                            <input type="text" placeholder="#" className="w-[60%] p-2 font-poppins text-[13px] shadow-inner rounded-xl border-[1px] border-slate-400 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
                         </td>
                         <td className="py-2">
                             <div className="flex md:justify-center">
-                                <input type="text" placeholder="#" className="w-[60%] p-2 shadow-inner rounded-xl border-[1px] border-slate-400 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
+                                <input type="text" placeholder="#" className="w-[60%] p-2 font-poppins text-[13px] shadow-inner rounded-xl border-[1px] border-slate-400 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
                             </div>
                         </td>
                     </tr>
@@ -59,14 +59,14 @@ function WorkoutTable(){
                             Overhead Press
                         </th>
                         <td className="md:px-6 md:py-2">
-                            <input type="text" placeholder="KG" className="w-[60%] p-2 shadow-inner rounded-xl border-[1px] border-slate-400 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
+                            <input type="text" placeholder="KG" className="w-[60%] p-2 font-poppins text-[13px] shadow-inner rounded-xl border-[1px] border-slate-400 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
                         </td>
                         <td className="flex md:justify-center py-2">
-                            <input type="text" placeholder="#" className="w-[60%] p-2 shadow-inner rounded-xl border-[1px] border-slate-400 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
+                            <input type="text" placeholder="#" className="w-[60%] p-2 font-poppins text-[13px] shadow-inner rounded-xl border-[1px] border-slate-400 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
                         </td>
                         <td className="py-2">
                             <div className="flex md:justify-center">
-                                <input type="text" placeholder="#" className="w-[60%] p-2 shadow-inner rounded-xl border-[1px] border-slate-400 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
+                                <input type="text" placeholder="#" className="w-[60%] p-2 font-poppins text-[13px] shadow-inner rounded-xl border-[1px] border-slate-400 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
                             </div>
                         </td>
                     </tr>

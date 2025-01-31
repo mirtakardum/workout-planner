@@ -1,11 +1,20 @@
 'use client';
 
 import Chart from 'chart.js/auto'
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 
 function GraphChart({ canvasId }) {
+
+    const canvasRef = useRef(null);
+    const chartInstance = useRef(null);
+
     useEffect(() => {
+
+        if (!canvasRef.current) return;
+
+        const ctx = canvasRef.current.getContext("2d");
+
         const data = [
         { date: 2010, weight: 10 },
         { date: 2011, weight: 20 },
@@ -16,10 +25,12 @@ function GraphChart({ canvasId }) {
         { date: 2016, weight: 28 },
         ];
 
-        const ctx = document.getElementById(canvasId);
-        if (ctx) {
-        return(
-        new Chart(ctx, {
+        if (chartInstance.current) {
+            chartInstance.current.destroy();
+        }
+
+        if(ctx){
+        chartInstance.current = new Chart(ctx, {
             type: 'line',
             data: {
             labels: data.map((row) => row.date),
@@ -67,9 +78,14 @@ function GraphChart({ canvasId }) {
                     },
             },
             },
-        }));
-        };
-  }, []);
+        });
+        return () => {
+            if (chartInstance.current) {
+              chartInstance.current.destroy();
+            }
+          };
+  }}, []);
+    return <canvas ref={canvasRef} width={400} height={300} />;
 }
 
 export default GraphChart;
