@@ -56,12 +56,12 @@ function BmiCalculator(){
                 </div>
                 <div className="w-[100%] flex flex-col justify-center gap-[20px]">
                     <div className="flex flex-col">
-                        <label for="weight-input" className="font-poppins text-[12px] text-slate-200">Weight (kg):</label>
-                        <input type="number" placeholder="KG" id="weight-input" className="w-[40%] p-1 shadow-inner rounded-lg border-[1px] border-slate-200 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
+                        <label for="weight-input" className="font-poppins text-[12px] pb-1 text-slate-200">Weight (kg):</label>
+                        <input type="number" placeholder="KG" id="weight-input" className="w-[40%] font-poppins text-[16px] p-1 shadow-inner rounded-lg border-[1px] border-slate-200 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
                     </div>
                     <div className="flex flex-col">
-                        <label for="height-input" className="font-poppins text-[12px] text-slate-200">Height (cm):</label>
-                        <input type="number" placeholder="CM" id="height-input" className="w-[40%] p-1 shadow-inner rounded-lg border-[1px] border-slate-200 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
+                        <label for="height-input" className="font-poppins text-[12px] pb-1 text-slate-200">Height (cm):</label>
+                        <input type="number" placeholder="CM" id="height-input" className="w-[40%] font-poppins text-[16px] p-1 shadow-inner rounded-lg border-[1px] border-slate-200 shadow-slate-200 placeholder:text-right focus:outline-none focus:shadow-slate-400"></input>
                     </div>
                 </div>
                 <button type="button" className="text-white bg-wp-dark shadow-neumorphicButton font-medium rounded-lg text-sm px-5 py-2.5" onClick={() => {calculateBMI()}}>Calculate</button>
