@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       gridTemplateColumns: {
         '60/40' : '60% 40%',
+        '40/60' : '40% 60%',
       },
       colors: {
         background: "var(--background)",

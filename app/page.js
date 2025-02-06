@@ -18,12 +18,13 @@ export default function Home() {
     speed: 600,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
   };
 
   return (
     <>
-    <div className="flex flex-col gap-[20px] h-screen w-screen px-[3%] py-[20px] bg-wp-dark">
-      <div className="flex h-[50%] shadow-[0.625rem_0.625rem_0.875rem_0_rgb(255, 255, 255),-0.5rem_-0.5rem_1.125rem_0_rgb(255, 255, 255)]">
+    <div className="flex flex-col gap-[20px] min-h-screen md:h-screen w-screen px-[3%] py-[20px] bg-wp-dark">
+      <div className="flex min-h-[50%] shadow-[0.625rem_0.625rem_0.875rem_0_rgb(255, 255, 255),-0.5rem_-0.5rem_1.125rem_0_rgb(255, 255, 255)]">
         <HeroCard/>
       </div>
       <div className="flex flex-col mx-auto md:hidden w-[100%]">
